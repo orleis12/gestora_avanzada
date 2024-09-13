@@ -1,0 +1,119 @@
+
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #007bff;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+   }
+
+    h1 {
+    color: #007bff;
+    }
+
+    .box-form-campos{
+        width: 30%;
+    }
+    
+    .box-compromisoFecha-pago {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form-group {
+    flex: 1; 
+    margin-bottom: 15px;
+    }
+
+    .botones-gestion{
+    margin: 10px;
+    }
+
+    .botones-gestion button{
+    margin: 5px;
+    }
+
+    .box-botones button{
+    margin: 5px;
+    width: 30%;
+    }
+    .form-title{
+        margin-bottom: 20px;
+    }
+
+
+    @media (max-width: 576px) {
+        .container {
+            padding: 10px;
+        }
+        .box-form-campos{
+            width: 100%;
+        }
+    }
+
+
+    .form-group.row {
+    display: flex;
+    align-items: center;
+    }
+
+
+    @media (max-width: 576px) {
+    .form-group.row {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .form-group.row label {
+        width: 100%; 
+        margin-bottom: 5px; 
+        text-align: left; 
+    }
+
+    .form-group.row .col-sm-8 {
+        width: 100%; 
+    }
+    }
+
+    /* Estilos generales para la caja de compromiso y fecha */
+    .box-compromisoFecha-pago {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    }
+
+    /* Asegúrate de que cada campo tenga un ancho completo en dispositivos móviles */
+    .box-compromisoFecha-pago .form-group {
+    flex: 1;
+    margin-bottom: 15px;
+    }
+
+    /* Ajustes para que los labels se alineen a la izquierda en dispositivos móviles */
+    @media (max-width: 576px) {
+    .box-compromisoFecha-pago .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Alinea el contenido a la izquierda */
+    }
+
+    .box-compromisoFecha-pago .form-group label {
+        margin-bottom: 5px; /* Espacio entre el label y el input */
+    }
+    }
+
